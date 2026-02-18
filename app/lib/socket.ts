@@ -1,6 +1,6 @@
 import { io, type Socket } from "socket.io-client";
 
-const SERVER_URL = "http://localhost:3000";
+const SERVER_URL = import.meta.env.SERVER_URL;
 
 // SINGLETON - one socket instance shared across the app
 let socket: Socket | null = null;
